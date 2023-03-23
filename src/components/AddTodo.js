@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useNavigate } from "react-router-dom";
 
 function AddTodo({ addTodo }) {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const navigate = useNavigate();
   const submit = (e) => {
     e.preventDefault();
     if (!title || !desc) {
@@ -14,6 +16,7 @@ function AddTodo({ addTodo }) {
     }
     setTitle("");
     setDesc("");
+    navigate("/");
   };
   return (
     <div className="container">

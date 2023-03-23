@@ -38,15 +38,8 @@ function App() {
     <div className="App">
       <Header title="Todos List" />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <AddTodo addTodo={addTodo} />
-              <Todos todos={todos} onDelete={onDelete} />
-            </>
-          }
-        />
+        <Route path="/" element={<Todos todos={todos} onDelete={onDelete} />} />
+        <Route path="/add" element={<AddTodo addTodo={addTodo} />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />

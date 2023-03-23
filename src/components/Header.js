@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 function Header({ title, searchBar }) {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="header" bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">{title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -17,7 +17,7 @@ function Header({ title, searchBar }) {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/add">Add</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
           </Nav>
           {searchBar ? (
