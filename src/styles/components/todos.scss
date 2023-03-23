@@ -1,0 +1,10 @@
+.todos-list {
+  min-height: 70vh;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  &__title {
+    grid-column: span 4;
+  }
+}

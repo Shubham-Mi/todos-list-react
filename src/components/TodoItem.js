@@ -1,15 +1,18 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 function TodoItem({ todo, onDelete }) {
   return (
-    <div>
-      <h4>{todo.title}</h4>
-      <p>{todo.description}</p>
-      <Button variant="danger" size="sm" onClick={onDelete}>
-        Delete
-      </Button>
-    </div>
+    <Card className="todo-item">
+      <Card.Body>
+        <Card.Title>{todo.title}</Card.Title>
+        <Card.Text>{todo.description}</Card.Text>
+        <Button variant="danger" onClick={onDelete}>
+          Delete
+        </Button>
+      </Card.Body>
+    </Card>
   );
 }
 

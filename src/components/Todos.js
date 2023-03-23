@@ -2,13 +2,9 @@ import React from "react";
 import TodoItem from "./TodoItem";
 
 function Todos({ todos, onDelete }) {
-  const todosStyle = {
-    minHeight: "70vh",
-    margin: "40px auto",
-  };
   return (
-    <div className="container" style={todosStyle}>
-      <h3 className="text-center">Todos List</h3>
+    <div className="todos-list container">
+      <h3 className="todos-list__title text-center">Todos List</h3>
       {todos.length === 0 ? (
         <p>No todos to display</p>
       ) : (
