@@ -1,9 +1,10 @@
 import React from "react";
+import Title from "./Title";
 
 function About() {
   return (
     <div className="container">
-      <h1> This is the about page</h1>
+      <Title title="About" />
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
         cumque facere? Ipsam voluptas placeat odio esse tempore quasi, quam, eos

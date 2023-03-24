@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
+import Title from "./Title";
 
 function AddTodo({ addTodo }) {
   const [title, setTitle] = useState("");
@@ -20,7 +21,7 @@ function AddTodo({ addTodo }) {
   };
   return (
     <div className="container">
-      <h3>Add a Todo</h3>
+      <Title title="Add a Todo" />
       <Form onSubmit={submit}>
         <Form.Group className="mb-3" controlId="title">
           <Form.Label>Todo Title</Form.Label>

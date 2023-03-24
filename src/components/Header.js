@@ -40,7 +40,7 @@ function Header({ title, searchBar }) {
 }
 
 Header.defaultProps = {
-  title: "Hello",
+  title: "Title",
   searchBar: true,
 };
 

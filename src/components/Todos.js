@@ -1,10 +1,11 @@
 import React from "react";
+import Title from "./Title";
 import TodoItem from "./TodoItem";
 
 function Todos({ todos, onDelete }) {
   return (
     <div className="todos-list container">
-      <h3 className="todos-list__title text-center">Todos List</h3>
+      <Title title="Todos List" />
       {todos.length === 0 ? (
         <p>No todos to display</p>
       ) : (
